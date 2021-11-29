@@ -1,0 +1,310 @@
+--Gui To Lua V2 By Quanova
+--Executed Version: 1.1.c
+
+local screenGui = Instance.new("ScreenGui",game:GetService("StarterGui"))
+
+local Instances = {
+	["TextLabel_7"] = Instance.new("TextLabel"),
+	["Frame_1"] = Instance.new("Frame"),
+	["TextLabel_10"] = Instance.new("TextLabel"),
+	["TextLabel_1"] = Instance.new("TextLabel"),
+	["TextButton_1"] = Instance.new("TextButton"),
+	["TextLabel_2"] = Instance.new("TextLabel"),
+	["TextButton_2"] = Instance.new("TextButton"),
+	["TextButton_3"] = Instance.new("TextButton"),
+	["LocalScript_1"] = Instance.new("LocalScript"),
+	["TextLabel_6"] = Instance.new("TextLabel"),
+	["Frame_2"] = Instance.new("Frame"),
+	["TextBox_1"] = Instance.new("TextBox"),
+	["TextLabel_4"] = Instance.new("TextLabel"),
+	["TextLabel_9"] = Instance.new("TextLabel"),
+	["TextLabel_13"] = Instance.new("TextLabel"),
+	["TextLabel_8"] = Instance.new("TextLabel"),
+	["TextLabel_3"] = Instance.new("TextLabel"),
+	["TextLabel_11"] = Instance.new("TextLabel"),
+	["TextLabel_14"] = Instance.new("TextLabel"),
+	["TextLabel_5"] = Instance.new("TextLabel"),
+	["ImageLabel_1"] = Instance.new("ImageLabel"),
+	["TextLabel_12"] = Instance.new("TextLabel"),
+	["Frame_3"] = Instance.new("Frame"),
+}
+
+
+screenGui.Name = 'project ligma recreation'
+screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Instances.Frame_1.Parent = screenGui
+Instances.Frame_1.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.Frame_1.BorderSizePixel = 0
+Instances.Frame_1.Position = UDim2.new(0.31398808956146, 0, 0.34924623370171, 0)
+Instances.Frame_1.Size = UDim2.new(0, 500, 0, 240)
+Instances.Frame_1.Name = 'main'
+
+Instances.Frame_2.Parent = Instances.Frame_1
+Instances.Frame_2.BackgroundColor3 = Color3.new(0.972549, 0.972549, 0.972549)
+Instances.Frame_2.BorderSizePixel = 0
+Instances.Frame_2.Position = UDim2.new(0, 0, -0.095833331346512, 0)
+Instances.Frame_2.Size = UDim2.new(0, 500, 0, 23)
+Instances.Frame_2.Name = 'top_drag'
+
+Instances.ImageLabel_1.Parent = Instances.Frame_2
+Instances.ImageLabel_1.Image = 'rbxassetid://87162794'
+Instances.ImageLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.ImageLabel_1.BorderSizePixel = 0
+Instances.ImageLabel_1.Position = UDim2.new(0.003000000026077, 0, 0.043000001460314, 0)
+Instances.ImageLabel_1.Size = UDim2.new(0, 20, 0, 20)
+
+Instances.TextLabel_1.Parent = Instances.Frame_2
+Instances.TextLabel_1.Font = Enum.Font.SourceSans
+Instances.TextLabel_1.Text = 'Suguma'
+Instances.TextLabel_1.TextColor3 = Color3.new(0.654902, 0.654902, 0.654902)
+Instances.TextLabel_1.TextSize = 14
+Instances.TextLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_1.BackgroundTransparency = 1
+Instances.TextLabel_1.BorderColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+Instances.TextLabel_1.Position = UDim2.new(0.041999999433756, 0, 0, 0)
+Instances.TextLabel_1.Size = UDim2.new(0, 48, 0, 23)
+
+Instances.TextLabel_2.Parent = Instances.Frame_2
+Instances.TextLabel_2.Font = Enum.Font.SourceSans
+Instances.TextLabel_2.Text = 'x'
+Instances.TextLabel_2.TextColor3 = Color3.new(0.654902, 0.654902, 0.654902)
+Instances.TextLabel_2.TextSize = 20
+Instances.TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_2.BackgroundTransparency = 1
+Instances.TextLabel_2.Position = UDim2.new(0.9539999961853, 0, 0, 0)
+Instances.TextLabel_2.Size = UDim2.new(0, 23, 0, 23)
+
+Instances.TextLabel_3.Parent = Instances.Frame_2
+Instances.TextLabel_3.Font = Enum.Font.SourceSans
+Instances.TextLabel_3.Text = '▯'
+Instances.TextLabel_3.TextColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+Instances.TextLabel_3.TextSize = 20
+Instances.TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_3.BackgroundTransparency = 1
+Instances.TextLabel_3.Position = UDim2.new(0.90799999237061, 0, 0, 0)
+Instances.TextLabel_3.Size = UDim2.new(0, 23, 0, 23)
+
+Instances.TextLabel_4.Parent = Instances.Frame_2
+Instances.TextLabel_4.Font = Enum.Font.SourceSans
+Instances.TextLabel_4.Text = '-'
+Instances.TextLabel_4.TextColor3 = Color3.new(0.654902, 0.654902, 0.654902)
+Instances.TextLabel_4.TextSize = 35
+Instances.TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_4.BackgroundTransparency = 1
+Instances.TextLabel_4.Position = UDim2.new(0.86199998855591, 0, 0, 0)
+Instances.TextLabel_4.Size = UDim2.new(0, 23, 0, 23)
+
+Instances.TextLabel_5.Parent = Instances.Frame_1
+Instances.TextLabel_5.Font = Enum.Font.SourceSans
+Instances.TextLabel_5.Text = 'Click here to enable output.'
+Instances.TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_5.TextSize = 14
+Instances.TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_5.BackgroundTransparency = 1
+Instances.TextLabel_5.Position = UDim2.new(0.0020000040531158, 0, 0.85833334922791, 0)
+Instances.TextLabel_5.Size = UDim2.new(0, 141, 0, 17)
+
+Instances.TextButton_1.Parent = Instances.Frame_1
+Instances.TextButton_1.Font = Enum.Font.GothamSemibold
+Instances.TextButton_1.Text = 'EXE'
+Instances.TextButton_1.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextButton_1.TextSize = 14
+Instances.TextButton_1.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextButton_1.BorderColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+Instances.TextButton_1.Position = UDim2.new(0.57599997520447, 0, 0.025000000372529, 0)
+Instances.TextButton_1.Size = UDim2.new(0, 60, 0, 66)
+Instances.TextButton_1.Name = 'EXE'
+
+Instances.TextButton_2.Parent = Instances.Frame_1
+Instances.TextButton_2.Font = Enum.Font.GothamSemibold
+Instances.TextButton_2.Text = 'CLEAR'
+Instances.TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextButton_2.TextSize = 14
+Instances.TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextButton_2.BorderColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+Instances.TextButton_2.Position = UDim2.new(0.57599997520447, 0, 0.30000001192093, 0)
+Instances.TextButton_2.Size = UDim2.new(0, 60, 0, 68)
+Instances.TextButton_2.Name = 'CLEAR'
+
+Instances.TextButton_3.Parent = Instances.Frame_1
+Instances.TextButton_3.Font = Enum.Font.GothamSemibold
+Instances.TextButton_3.Text = 'INJECT'
+Instances.TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextButton_3.TextSize = 14
+Instances.TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextButton_3.BorderColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+Instances.TextButton_3.Position = UDim2.new(0.57599997520447, 0, 0.58333331346512, 0)
+Instances.TextButton_3.Size = UDim2.new(0, 60, 0, 66)
+Instances.TextButton_3.Name = 'INJECT'
+
+Instances.Frame_3.Parent = Instances.Frame_1
+Instances.Frame_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.Frame_3.BorderColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+Instances.Frame_3.Position = UDim2.new(0.70800000429153, 0, 0.025000000372529, 0)
+Instances.Frame_3.Size = UDim2.new(0, 140, 0, 227)
+Instances.Frame_3.Name = 'scripthub'
+
+Instances.TextLabel_6.Parent = Instances.Frame_3
+Instances.TextLabel_6.Font = Enum.Font.SourceSans
+Instances.TextLabel_6.Text = 'allahbomb.txt'
+Instances.TextLabel_6.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_6.TextSize = 14
+Instances.TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_6.BackgroundTransparency = 1
+Instances.TextLabel_6.Size = UDim2.new(0, 71, 0, 13)
+
+Instances.TextLabel_7.Parent = Instances.Frame_3
+Instances.TextLabel_7.Font = Enum.Font.SourceSans
+Instances.TextLabel_7.Text = 'anonymous.txt'
+Instances.TextLabel_7.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_7.TextSize = 14
+Instances.TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_7.BackgroundTransparency = 1
+Instances.TextLabel_7.Position = UDim2.new(-0.0054286420345306, 0, 0.056999981403351, 0)
+Instances.TextLabel_7.Size = UDim2.new(0, 78, 0, 13)
+
+Instances.TextLabel_8.Parent = Instances.Frame_3
+Instances.TextLabel_8.Font = Enum.Font.SourceSans
+Instances.TextLabel_8.Text = 'c00lgui reborn.txt'
+Instances.TextLabel_8.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_8.TextSize = 14
+Instances.TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_8.BackgroundTransparency = 1
+Instances.TextLabel_8.Position = UDim2.new(0, 0, 0.11453744769096, 0)
+Instances.TextLabel_8.Size = UDim2.new(0, 87, 0, 13)
+
+Instances.TextLabel_9.Parent = Instances.Frame_3
+Instances.TextLabel_9.Font = Enum.Font.SourceSans
+Instances.TextLabel_9.Text = 'chatgui.txt'
+Instances.TextLabel_9.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_9.TextSize = 14
+Instances.TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_9.BackgroundTransparency = 1
+Instances.TextLabel_9.Position = UDim2.new(0, 0, 0.17180617153645, 0)
+Instances.TextLabel_9.Size = UDim2.new(0, 50, 0, 13)
+
+Instances.TextLabel_10.Parent = Instances.Frame_3
+Instances.TextLabel_10.Font = Enum.Font.SourceSans
+Instances.TextLabel_10.Text = 'eyeball_script.txt'
+Instances.TextLabel_10.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_10.TextSize = 14
+Instances.TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_10.BackgroundTransparency = 1
+Instances.TextLabel_10.Position = UDim2.new(-0.0071428567171097, 0, 0.23348015546799, 0)
+Instances.TextLabel_10.Size = UDim2.new(0, 85, 0, 13)
+
+Instances.TextLabel_11.Parent = Instances.Frame_3
+Instances.TextLabel_11.Font = Enum.Font.SourceSans
+Instances.TextLabel_11.Text = 'garyall.txt'
+Instances.TextLabel_11.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_11.TextSize = 14
+Instances.TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_11.BackgroundTransparency = 1
+Instances.TextLabel_11.Position = UDim2.new(0, 0, 0.29074889421463, 0)
+Instances.TextLabel_11.Size = UDim2.new(0, 47, 0, 13)
+
+Instances.TextLabel_12.Parent = Instances.Frame_3
+Instances.TextLabel_12.Font = Enum.Font.SourceSans
+Instances.TextLabel_12.Text = 'Grab Knife.txt'
+Instances.TextLabel_12.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_12.TextSize = 14
+Instances.TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_12.BackgroundTransparency = 1
+Instances.TextLabel_12.Position = UDim2.new(0, 0, 0.34801760315895, 0)
+Instances.TextLabel_12.Size = UDim2.new(0, 65, 0, 13)
+
+Instances.TextLabel_13.Parent = Instances.Frame_3
+Instances.TextLabel_13.Font = Enum.Font.SourceSans
+Instances.TextLabel_13.Text = 'Grim Reaper.txt'
+Instances.TextLabel_13.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_13.TextSize = 14
+Instances.TextLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_13.BackgroundTransparency = 1
+Instances.TextLabel_13.Position = UDim2.new(0, 0, 0.40528631210327, 0)
+Instances.TextLabel_13.Size = UDim2.new(0, 74, 0, 13)
+
+Instances.TextLabel_14.Parent = Instances.Frame_3
+Instances.TextLabel_14.Font = Enum.Font.SourceSans
+Instances.TextLabel_14.Text = 'time blast.txt'
+Instances.TextLabel_14.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextLabel_14.TextSize = 14
+Instances.TextLabel_14.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextLabel_14.BackgroundTransparency = 1
+Instances.TextLabel_14.Position = UDim2.new(0, 0, 0.46255508065224, 0)
+Instances.TextLabel_14.Size = UDim2.new(0, 65, 0, 13)
+
+Instances.LocalScript_1.Parent = Instances.Frame_1
+Instances.LocalScript_1.Name = 'Dragify'
+
+Instances.TextBox_1.Parent = Instances.Frame_1
+Instances.TextBox_1.Font = Enum.Font.SourceSans
+Instances.TextBox_1.PlaceholderText = '--project ligma reel?'
+Instances.TextBox_1.RichText = true
+Instances.TextBox_1.Text = ''
+Instances.TextBox_1.TextColor3 = Color3.new(0, 0, 0)
+Instances.TextBox_1.TextSize = 14
+Instances.TextBox_1.TextTruncate = Enum.TextTruncate.AtEnd
+Instances.TextBox_1.TextXAlignment = Enum.TextXAlignment.Left
+Instances.TextBox_1.TextYAlignment = Enum.TextYAlignment.Top
+Instances.TextBox_1.BackgroundColor3 = Color3.new(1, 1, 1)
+Instances.TextBox_1.BorderColor3 = Color3.new(0.760784, 0.760784, 0.760784)
+Instances.TextBox_1.Position = UDim2.new(0.016000000759959, 0, 0.025000000372529, 0)
+Instances.TextBox_1.Size = UDim2.new(0, 280, 0, 200)
+
+local DO_NOT_COPY_THIS_VARIABLE_001 = {}
+local DO_NOT_COPY_THIS_VARIABLE_002 = require
+
+local require = function(object)
+	local module = DO_NOT_COPY_THIS_VARIABLE_001[object]
+
+	if module then
+		return DO_NOT_COPY_THIS_VARIABLE_001[object]()
+	end
+
+	return DO_NOT_COPY_THIS_VARIABLE_002(object)
+end
+
+
+function Code_LocalScript_1() --Dragify
+	local script = Instances.LocalScript_1
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(Code_LocalScript_1)()
