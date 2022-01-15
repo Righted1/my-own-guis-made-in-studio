@@ -29,6 +29,7 @@ TextLabel.Size = UDim2.new(0, 269, 0, 90)
 TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.LineHeight = 1.100
 TextLabel.Text = "Project Ligma by Harkinian and Unverified<br /> Run scripts live without filthy modules or converting!<br />Use the external program to execute scripts.<br />Status: Injected"
+TextLabel.RichText = true
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 15.000
 TextLabel.TextTransparency = 1.000
