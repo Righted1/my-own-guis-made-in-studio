@@ -20,6 +20,7 @@ ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.Position = UDim2.new(-0.127000004, 0, 0.407999992, 0)
 ImageLabel.Size = UDim2.new(0, 90, 0, 90)
 ImageLabel.Image = "rbxassetid://87162794"
+ImageLabel.ZIndex = 5
 
 TextLabel.Parent = ImageLabel
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -34,14 +35,15 @@ TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 15.000
 TextLabel.TextTransparency = 1.000
 TextLabel.TextWrapped = true
+TextLabel.ZIndex = 5
 
 -- Scripts:
 
-local function KQTLQI_fake_script() -- odfvjhkdnesubhunjbofdihbsv.IntroTween 
+local function KQTLQI_fake_script() -- odfvjhkdnesubhunjbofdihbsv.IntroTween
 	local script = Instance.new('LocalScript', odfvjhkdnesubhunjbofdihbsv)
 
 	-- You're not afraid of dragons are you? Of course not!
-	
+
 	local img = script.Parent.ImageLabel
 	local txt = img.TextLabel
 	-- Please remember this end position. The tween ends at {0.01, 0},{0.813, 0}
@@ -52,46 +54,10 @@ local function KQTLQI_fake_script() -- odfvjhkdnesubhunjbofdihbsv.IntroTween
 	wait(3)
 	img:TweenPosition(UDim2.new(0.003, 0, 0.86, 0), "Out", "Sine", 0.7, false)
 	wait(2)
-	wait()
-	txt.BackgroundTransparency = 0.9
-	wait()
-	txt.TextTransparency = 0.9
-	wait()
-	txt.BackgroundTransparency = 0.8
-	wait()
-	txt.TextTransparency = 0.8
-	wait()
-	txt.BackgroundTransparency = 0.7
-	wait()
-	txt.TextTransparency = 0.7
-	wait()
-	txt.BackgroundTransparency = 0.6
-	wait()
-	txt.TextTransparency = 0.6
-	wait()
-	txt.BackgroundTransparency = 0.5
-	wait()
-	txt.TextTransparency = 0.5
-	wait()
-	txt.BackgroundTransparency = 0.4
-	wait()
-	txt.TextTransparency = 0.4
-	wait()
-	txt.BackgroundTransparency = 0.3
-	wait()
-	txt.TextTransparency = 0.3
-	wait()
-	txt.BackgroundTransparency = 0.2
-	wait()
-	txt.TextTransparency = 0.2
-	wait()
-	txt.BackgroundTransparency = 0.1
-	wait()
-	txt.TextTransparency = 0.1
-	wait()
-	txt.BackgroundTransparency = 0
-	wait()
-	txt.TextTransparency = 0
-	wait()
+    for i = 1,10 do
+	wait(0.01)
+	txt.BackgroundTransparency = txt.BackgroundTransparency - 0.1
+	txt.TextTransparency = txt.TextTransparency - 0.1
+	end
 end
 coroutine.wrap(KQTLQI_fake_script)()
